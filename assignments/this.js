@@ -48,8 +48,12 @@ function Classmate(name) {
 }
 
 const gwanda = new Classmate("Gwanda");
+const miles = new Classmate("Miles");
 gwanda.greet();
 
 // Principle 4
 
 // code example for Explicit Binding
+
+gwanda.greet.apply(miles);
+miles.greet.apply(gwanda);
