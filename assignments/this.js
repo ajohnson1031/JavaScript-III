@@ -39,6 +39,17 @@ console.log(myObj.somebodySan("Daniel"));
 
 // code example for New Binding
 
+function Classmate(name) {
+  (this.greeting = "Hello"),
+    (this.name = name),
+    (this.greet = function() {
+      console.log(`${this.greeting}, ${this.name}. Welcome to Lambda School!`);
+    });
+}
+
+const gwanda = new Classmate("Gwanda");
+gwanda.greet();
+
 // Principle 4
 
 // code example for Explicit Binding
