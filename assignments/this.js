@@ -24,6 +24,17 @@ console.log(hello("Aaron"));
 
 // code example for Implicit Binding
 
+const myObj = {
+  greeting: "Wax on, wax off",
+  somebodySan: function(name) {
+    console.log(this);
+    return `${this.greeting}, ${name}san!`;
+  }
+};
+
+myObj.somebodySan("Aaron");
+console.log(myObj.somebodySan("Daniel"));
+
 // Principle 3
 
 // code example for New Binding
